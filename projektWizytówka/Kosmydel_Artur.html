@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Artura Kosmydela - studenta Informatyki i Ekonometrii AGH. Programista, pasjonat nowych technologii.">
+    <meta name="author" content="Artur Kosmydel">
+    <title>Artur Kosmydel | Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky navigation -->
+    <nav id="navbar" aria-label="Menu główne">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">AK<span>.</span></a>
+
+            <button class="hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Start</a></li>
+                <li><a href="#o-mnie" class="nav-link">O mnie</a></li>
+                <li><a href="#umiejetnosci" class="nav-link">Umiejętności</a></li>
+                <li><a href="#projekty" class="nav-link">Projekty</a></li>
+                <li><a href="#hobby" class="nav-link">Pasje</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero / Landing -->
+    <header id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Cześć, nazywam się</p>
+            <h1>Artur Kosmydel</h1>
+            <p class="hero-subtitle">Student Informatyki i Ekonometrii na AGH<br>Tworzę nowoczesne rozwiązania webowe.</p>
+            <div class="hero-cta">
+                <a href="#projekty" class="btn btn-primary">Zobacz projekty</a>
+                <a href="#kontakt" class="btn btn-secondary">Skontaktuj się</a>
+            </div>
+        </div>
+        <a href="#o-mnie" class="scroll-indicator" aria-label="Przewiń w dół">
+            <span></span>
+        </a>
+    </header>
+
+    <main class="container-main">
+
+        <!-- About -->
+        <section class="container reveal" id="o-mnie">
+            <h2>O mnie</h2>
+            <div class="profile-wrapper">
+                <img src="images/pp.jpg" alt="Zdjęcie profilowe Artura Kosmydela" class="profile-img">
+                <div class="profile-text">
+                    <p>Pasjonuję się nowymi technologiami i tworzeniem treści w sieci. Na co dzień zgłębiam tajniki programowania i analizy danych, a po godzinach realizuję własne projekty.</p>
+                    <p>Lubię łączyć analityczne myślenie z kreatywnością — dzięki studiom na pograniczu informatyki i ekonometrii potrafię spojrzeć na problem z różnych stron.</p>
+                    <a href="https://www.linkedin.com/in/artur-kosmydel" target="_blank" rel="noopener noreferrer" class="btn-link">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="container reveal" id="umiejetnosci">
+            <h2>Umiejętności</h2>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <span class="icon" aria-hidden="true">🎨</span>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 &amp; CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <span class="icon" aria-hidden="true">⚙️</span>
+                    <h3>Backend &amp; Dane</h3>
+                    <ul>
+                        <li>C, C++, C#</li>
+                        <li>Bazy danych (SQL)</li>
+                        <li>Algorytmika</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <span class="icon" aria-hidden="true">🛠️</span>
+                    <h3>Narzędzia</h3>
+                    <ul>
+                        <li>Git &amp; GitHub</li>
+                        <li>Visual Studio Code</li>
+                        <li>Praca w zespole (Scrum)</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="container reveal" id="projekty">
+            <h2>Projekty</h2>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg,#4a90e2,#00fbff);">
+                        <span aria-hidden="true">💻</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Portfolio osobiste</h3>
+                        <p>Responsywna strona-wizytówka zbudowana w czystym HTML, CSS i JavaScript. Wykorzystuje Flexbox, CSS Grid oraz IntersectionObserver.</p>
+                        <div class="tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg,#f78ca0,#f9748f);">
+                        <span aria-hidden="true">📊</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Analiza danych</h3>
+                        <p>Projekt akademicki z analizy danych — przetwarzanie zbiorów statystycznych i wizualizacja wyników w czytelnej formie.</p>
+                        <div class="tags">
+                            <span>Python</span><span>SQL</span><span>Statystyka</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg,#43cea2,#185a9d);">
+                        <span aria-hidden="true">🎮</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Gra konsolowa w C++</h3>
+                        <p>Klasyczna gra napisana w C++ wykorzystująca programowanie obiektowe i podstawy algorytmiki.</p>
+                        <div class="tags">
+                            <span>C++</span><span>OOP</span><span>Algorytmy</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <h3 class="subheading">Postępy w nauce</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tydzień</th>
+                            <th>Postęp</th>
+                            <th>Godziny</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>25%</td><td>10h</td></tr>
+                        <tr><td>2</td><td>50%</td><td>12h</td></tr>
+                        <tr><td>3</td><td>90%</td><td>15h</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Hobby -->
+        <section class="container reveal" id="hobby">
+            <h2>Moje pasje</h2>
+            <div class="hobby-wrapper">
+                <article class="hobby-card">
+                    <span class="icon" aria-hidden="true">⚽</span>
+                    <h3>Piłka nożna</h3>
+                    <p>Zarówno na boisku, jak i w formie analizy meczowej.</p>
+                </article>
+                <article class="hobby-card">
+                    <span class="icon" aria-hidden="true">💻</span>
+                    <h3>Programowanie</h3>
+                    <p>Tworzenie projektów po godzinach i nauka nowych frameworków.</p>
+                </article>
+                <article class="hobby-card">
+                    <span class="icon" aria-hidden="true">📚</span>
+                    <h3>Książki</h3>
+                    <p>Literatura popularnonaukowa i fantastyka – sposób na odpoczynek.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="container reveal" id="kontakt">
+            <h2>Kontakt</h2>
+            <p class="contact-intro">Masz pytanie albo propozycję współpracy? Chętnie odpowiem!</p>
+            <div class="contact-grid">
+                <a href="mailto:arturkos76@gmail.com" class="contact-card">
+                    <span class="icon" aria-hidden="true">✉️</span>
+                    <h3>E-mail</h3>
+                    <p>arturkos76@gmail.com</p>
+                </a>
+                <a href="https://github.com/kosmdl" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <span class="icon" aria-hidden="true">🐙</span>
+                    <h3>GitHub</h3>
+                    <p>@kosmdl</p>
+                </a>
+                <a href="https://www.linkedin.com/in/artur-kosmydel" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <span class="icon" aria-hidden="true">💼</span>
+                    <h3>LinkedIn</h3>
+                    <p>Artur Kosmydel</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Artur Kosmydel. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Wróć na górę strony">↑</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
